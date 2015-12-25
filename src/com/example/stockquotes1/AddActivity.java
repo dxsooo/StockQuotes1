@@ -56,10 +56,10 @@ public class AddActivity extends Activity {
 					return;
 				}
 				//valid code
-				sdata.stockid="sh"+stockid.getText().toString();
+				sdata.stockid="sz"+stockid.getText().toString();
 				if(!valid())
 				{
-					sdata.stockid="sz"+stockid.getText().toString();
+					sdata.stockid="sh"+stockid.getText().toString();
 					if(!valid())
 					{
 						Toast.makeText(AddActivity.this, "无效股票代码", Toast.LENGTH_SHORT).show();  

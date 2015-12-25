@@ -146,7 +146,11 @@ public class MainActivity extends Activity {
 				TextView tv2 = new TextView(MainActivity.this);
 				tv2.setTextSize(20);
 				tv2.setTextColor(Color.BLACK);
-				tv2.setText(String.valueOf(rawlistdata.get(i).price));
+				if (rawlistdata.get(i).price == 0) {
+					// stop today then use yesterday price
+					tv2.setText(String.valueOf(rawlistdata.get(i).yesterday_price));
+				} else
+					tv2.setText(String.valueOf(rawlistdata.get(i).price));
 				LinearLayout.LayoutParams lp2 = new LinearLayout.LayoutParams(
 						referwidth * 2 / 10,
 						LinearLayout.LayoutParams.WRAP_CONTENT);
@@ -159,6 +163,12 @@ public class MainActivity extends Activity {
 				double interest = (rawlistdata.get(i).price - StockMap
 						.get(rawlistdata.get(i).code).cost)
 						/ StockMap.get(rawlistdata.get(i).code).cost;
+				if (interest == -1) {
+					// stop today then use yesterday price
+					interest = (rawlistdata.get(i).yesterday_price - StockMap
+							.get(rawlistdata.get(i).code).cost)
+							/ StockMap.get(rawlistdata.get(i).code).cost;
+				}
 				if (interest > 0) {
 					tv3.setTextColor(Color.WHITE);
 					tv3.setBackgroundColor(Color.RED);
