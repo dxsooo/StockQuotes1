@@ -10,11 +10,11 @@ Build the project and install the apk in your Android phone. The default API lev
 * Add the stocks that you purchase and view their prices in real time
 * Edit the cost of per stock
 * Edit the purchase amount of per stock
-* Caculate the interest rate based on your cost of per stock
+* Display the interest rate of every stock based on your cost
 * Remove stocks
 
 ##ScreenShots
-![image](http://github.com/dxsooo/StockQuotes1/raw/master/screenshots/main.png)
-![image](http://github.com/dxsooo/StockQuotes1/raw/master/screenshots/add.png)
-![image](http://github.com/dxsooo/StockQuotes1/raw/master/screenshots/edit.png)
-![image](http://github.com/dxsooo/StockQuotes1/raw/master/screenshots/del.png)
+![image](/screenshots/main.png)
+![image](https://github.com/dxsooo/StockQuotes1/raw/master/screenshots/add.png)
+![image](https://github.com/dxsooo/StockQuotes1/raw/master/screenshots/edit.png)
+![image](https://github.com/dxsooo/StockQuotes1/raw/master/screenshots/del.png)
