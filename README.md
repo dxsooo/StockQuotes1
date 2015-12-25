@@ -14,3 +14,7 @@ Build the project and install the apk in your Android phone. The default API lev
 * Remove stocks
 
 ##ScreenShots
+![image](http://github.com/dxsooo/StockQuotes1/raw/master/screenshots/main.png)
+![image](http://github.com/dxsooo/StockQuotes1/raw/master/screenshots/add.png)
+![image](http://github.com/dxsooo/StockQuotes1/raw/master/screenshots/edit.png)
+![image](http://github.com/dxsooo/StockQuotes1/raw/master/screenshots/del.png)
